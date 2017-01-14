@@ -131,7 +131,7 @@ class Input(object):
         self.value = attrs.pop('value', None)
         self.pre = attrs.pop('pre', "")
         self.post = attrs.pop('post', "")
-        self.note = None
+        self.note = attrs.pop('note', "")
         
         self.id = attrs.setdefault('id', self.get_default_id())
         
